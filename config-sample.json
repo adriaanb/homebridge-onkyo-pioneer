@@ -6,33 +6,21 @@
     "pin": "031-45-154"
   },
 
-  "description": "This is an example configuration for homebridge-onkyo-pioneer",
-  "platforms": [
-    {
-      "platform": "OnkyoPioneer",
-      "discovery": true,
-      "debug": false,
-      "statePollingInterval": 10,
-      "receivers": [
+  "description": "This is an example configuration for homebridge-onkyo-tx8050",
+    "platforms": [
         {
-          "ip": "10.0.0.2",
-          "name": "Bedroom Receiver",
-          "maxVolume": 100,
-          "volumeAccessory": "fan"
+            "name": "Onkyo TX-8050",
+            "ip": "192.168.50.139",
+            "port": 60128,
+            "maxVolume": 45,
+            "volumeAccessory": "fan",
+            "powerCommand": "echo \"0x4B36D32C\" > /dev/ttyACM0",
+            "powerOnDelay": 30,
+            "statePollingInterval": 30,
+            "debug": true,
+            "platform": "OnkyoTX8050"
         },
-        {
-          "ip": "10.0.0.5",
-          "name": "Living Room Receiver",
-          "maxVolume": 120,
-          "volumeAccessory": "bulb",
-          "enableZone2": true,
-          "zone2MaxVolume": 150,
-          "enableZone3": true,
-          "zone3MaxVolume": 130
-        }
-      ]
-    }
-  ],
+    ],
 
   "accessories": [
   ]
