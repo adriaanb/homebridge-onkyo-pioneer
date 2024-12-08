@@ -1,22 +1,18 @@
 {
-  "name": "homebridge-onkyo-pioneer",
-  "description": "Homebridge Plugin for Onkyo & Pioneer Audio Receivers",
-  "version": "0.0.18",
+  "name": "homebridge-onkyo-tx8050",
+  "description": "Experimental Homebridge Plugin for Onkyo TX-8050 Receivers",
+  "version": "0.0.2",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/nitaybz/homebridge-onkyo-pioneer.git"
+    "url": "git://github.com/adriaanb/homebridge-onkyo-tx8050.git"
   },
   "license": "MIT",
   "preferGlobal": true,
   "keywords": [
     "homebridge-plugin",
-    "homebridge-onkyo-pioneer",
-    "homebridge-onkyo",
-    "homebridge-pioneer"
+    "homebridge-onkyo-tx8050"
   ],
-  "bugs": {
-    "url": "https://github.com/nitaybz/homebridge-onkyo-pioneer/issues"
-  },
   "engines": {
     "node": ">=18.15.0",
     "homebridge": ">=1.6.0"
@@ -34,19 +30,5 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
-  },
-  "funding": [
-    {
-      "type": "paypal",
-      "url": "https://paypal.me/nitaybz"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/nitaybz"
-    },
-    {
-      "type": "kofi",
-      "url": "https://ko-fi.com/nitaybz"
-    }
-  ]
+  }
 }
