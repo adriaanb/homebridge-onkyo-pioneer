@@ -13,6 +13,7 @@ class AUDIO_RECEIVER {
 		this.api = platform.api
 		this.avrId = config.id
 		this.id = `${config.id}_${config.zone}`
+		this.ip = config["ip"] //AJB
 		this.zone = config.zone
 		this.name = config.name || `${config.avrName} ${this.zone.charAt(0).toUpperCase() + this.zone.slice(1)}`
 		this.serial = this.id
